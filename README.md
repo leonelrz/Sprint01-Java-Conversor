@@ -37,7 +37,8 @@ En caso de que los valores no sean numericos, arrojara un mensaje de error
 ![image](https://user-images.githubusercontent.com/112590041/214973759-c214083b-83b4-4532-a508-fec6a45a920d.png)
 
 
-- Resultado: Una vez que el usuario seleccione el tipo de cambio que va a realizar la aplicacion dará el resultado esperado 
+- Resultado: Una vez que el usuario seleccione el tipo de cambio que va a realizar la aplicacion dará el resultado esperado.
+
 ![image](https://user-images.githubusercontent.com/112590041/214973817-0406d9ce-03e4-40bc-bb6f-091e5afeab4a.png)
 
 
