@@ -1,0 +1,8 @@
+package ConversorMonedas;
+
+public class Function {
+	
+	public void ConvertirMonedas (double ValorRecibido) {
+		
+	}
+}

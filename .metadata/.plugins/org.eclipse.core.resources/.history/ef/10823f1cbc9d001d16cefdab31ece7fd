@@ -1,0 +1,5 @@
+package ValidacionErrores;
+
+public class ValidarInput {
+
+}

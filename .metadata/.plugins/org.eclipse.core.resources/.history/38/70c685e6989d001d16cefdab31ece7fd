@@ -1,0 +1,38 @@
+package ConversorTemperatura;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirTemperatura {
+
+	public void ConvertirCelsiusAFahrenheit (double valorRecibido) {
+		double temFahr = (valorRecibido * 1.8) + 32;
+		temFahr = (double) Math.round(temFahr * 100d)/100;
+		JOptionPane.showMessageDialog(null, valorRecibido + " °C es equivalente a " +  temFahr + " °F");
+	}
+	
+	public void ConvertirFahrenheitACelsius (double valorRecibido) {
+		double temCels = (valorRecibido - 32) / 1.8;
+		temCels = (double) Math.round(temCels * 100d)/100;
+		JOptionPane.showMessageDialog(null, valorRecibido + " °F es equivalente a " +  temCels + " °C");
+	}
+	public void ConvertirKelvinACelsius (double valorRecibido) {
+		double temCelK = valorRecibido - 273.15;
+		temCelK = (double) Math.round(temCelK * 100d)/100;
+		JOptionPane.showMessageDialog(null, valorRecibido + " Kelvin es equivalente a " +  temCelK + " °C");
+	}
+	public void ConvertirCelsiusAKelvin (double valorRecibido) {
+		double temKelC = valorRecibido +273.15;
+		temKelC = (double) Math.round(temKelC * 100d)/100;
+		JOptionPane.showMessageDialog(null, valorRecibido + " °C es equivalente a " +  temKelC + " °F");
+	}
+	public void ConvertirFahrenheitAKelvin (double valorRecibido) {
+		double temFahrK = ((valorRecibido -32)/1.8 )+ 273.15;
+		temFahrK = (double) Math.round(temFahrK * 100d)/100;
+		JOptionPane.showMessageDialog(null, valorRecibido + " °F es equivalente a " +  temFahrK + " Kelvin");
+	}
+	public void ConvertirKelvinAFahrenheit (double valorRecibido) {
+		double temKelF = ((valorRecibido - 273.15)*1.8) + 32;
+		temKelF = (double) Math.round(temKelF * 100d)/100;
+		JOptionPane.showMessageDialog(null, valorRecibido + " °C es equivalente a " +  temKelF + " °F");
+	}
+}

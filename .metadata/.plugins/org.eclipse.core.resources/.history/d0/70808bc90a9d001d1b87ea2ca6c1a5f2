@@ -1,0 +1,36 @@
+package ConversorMonedas;
+
+import javax.swing.*;
+
+public class ConvertirMonedas {
+	
+	public void ConvertirPesosMexicanosADolar (double valorRecibido) {
+		double monedaDolar = valorRecibido / 18.80;
+		monedaDolar = (double) Math.round(monedaDolar * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tienes $ " + monedaDolar + " Dolares");
+	}
+	
+	public void ConvertirPesosMexicanosAEuro (double valorRecibido) {
+		double monedaEuro = valorRecibido / 20.52;
+		monedaEuro = (double) Math.round(monedaEuro * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tienes $ " + monedaEuro + " Euros");
+	}
+	
+	public void ConvertirPesosMexicanosALibraEsterlina (double valorRecibido) {
+		double monedaLibra = valorRecibido / 23.33;
+		monedaLibra = (double) Math.round(monedaLibra * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tienes $ " + monedaLibra + " Libras Esterlinas");
+	}
+	
+	public void ConvertirPesosMexicanosAYenJapones (double valorRecibido) {
+		double monedaYen = valorRecibido / 0.15 ;
+		monedaYen = (double) Math.round(monedaYen * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tienes $ " + monedaYen + " Yenes Japoneces");
+	}
+	
+	public void ConvertirPesosMexicanosAWonSurCoreano (double valorRecibido) {
+		double monedaWon= valorRecibido / 0.015;
+		monedaWon = (double) Math.round(monedaWon * 100d)/100;
+		JOptionPane.showMessageDialog(null, "Tienes $ " + monedaWon + " Won sur-coreano");
+	}
+}

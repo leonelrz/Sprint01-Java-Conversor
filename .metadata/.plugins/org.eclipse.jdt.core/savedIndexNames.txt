@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Leonel Reyes\Desktop\Programa-ONE\Challeng\Conversor-monedas\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1319456583.index
+2368478960.index

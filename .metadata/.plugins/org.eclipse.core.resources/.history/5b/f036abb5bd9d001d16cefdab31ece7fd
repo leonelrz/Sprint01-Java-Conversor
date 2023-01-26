@@ -1,0 +1,14 @@
+package ValidacionErrores;
+
+public class ValidarInput {
+
+	public static boolean validaValorMoneda(String texto) {
+		return texto.matches("^[0-9]+([\\.][0-9]+)?$");
+		
+	}
+	
+	public static boolean validaValorTemperatura(String texto) {
+		return texto.matches("^-?[0-9]+([\\.][0-9]+)?$");
+		
+	}
+}

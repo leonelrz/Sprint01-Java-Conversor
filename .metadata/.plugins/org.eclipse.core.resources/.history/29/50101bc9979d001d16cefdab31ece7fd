@@ -1,0 +1,12 @@
+package ConversorTemperatura;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirTemperatura {
+
+	public void ConvertirCelsiusAFahrenheit (double valorRecibido) {
+		double temFahr = (valorRecibido * 1.8) + 32;
+		temFahr = (double) Math.round(temFahr * 100d)/100;
+		JOptionPane.showMessageDialog(null, valorRecibido + " °C es equivalente a " +  temFahr + " °F");
+	}
+}

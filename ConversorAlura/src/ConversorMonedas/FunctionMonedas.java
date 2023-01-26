@@ -1,0 +1,52 @@
+package ConversorMonedas;
+
+import javax.swing.*;
+
+public class FunctionMonedas {
+	
+	ConvertirMonedas monedas = new ConvertirMonedas();
+	
+	public void ConvertirMonedas (double ValorRecibido) {
+		String opcion = (JOptionPane.showInputDialog(null, 
+    			"Elije la moneda a la que deseas convertir tu dinero ", "Monedas", 
+    			JOptionPane.PLAIN_MESSAGE, null, new Object[] 
+    			{"De Pesos (MXN) a Dólar (USD)", "De Pesos (MXN) a Euro (EUR)", "De Pesos (MXN) a Libras (GBP)","De Pesos (MXN) a Yen (JPY)","De Pesos (MXN) a Won Coreano (KRW)",
+    					"De Dólar (USD) a Pesos (MXN)", "De Euro (EUR) a Pesos (MXN)", "De Libras (GBP) a Pesos (MXN)","De Yen (JPY) a Pesos (MXN)","De Won Coreano (KRW) a Pesos (MXN)"}, 
+    			"Seleccion")).toString();
+		switch(opcion) {
+        case "De Pesos (MXN) a Dólar (USD)":
+        	monedas.ConvertirPesosMexicanosADolar(ValorRecibido);
+        	break;
+        case "De Pesos (MXN) a Euro (EUR)":
+        	monedas.ConvertirPesosMexicanosAEuro(ValorRecibido);
+        	break;	
+        case "De Pesos (MXN) a Libras (GBP)":
+        	monedas.ConvertirPesosMexicanosALibraEsterlina(ValorRecibido);
+        	break;
+        case "De Pesos (MXN) a Yen (JPY)":
+        	monedas.ConvertirPesosMexicanosAYenJapones(ValorRecibido);
+        	break;
+        case "De Pesos (MXN) a Won Coreano (KRW)":
+        	monedas.ConvertirPesosMexicanosAWonSurCoreano(ValorRecibido);
+        	break;
+        	
+        //Divisas extranjereas a pesos MXN
+        	
+        case "De Dólar (USD) a Pesos (MXN)":
+        	monedas.ConvertirDolarAPesosMexicanos(ValorRecibido);
+        	break;	
+        case "De Euro (EUR) a Pesos (MXN)":
+        	monedas.ConvertirEuroAPesosMexicanos(ValorRecibido);
+        	break;
+        case "De Libras (GBP) a Pesos (MXN)":
+        	monedas.ConvertirLibraEsterlinaAPesosMexicanos(ValorRecibido);
+        	break;
+        case "De Yen (JPY) a Pesos (MXN)":
+        	monedas.ConvertirYenJaponesAPesosMexicanos(ValorRecibido);
+        	break;
+        case "De Won Coreano (KRW) a Pesos (MXN)":
+        	monedas.ConvertirWonSurCoreanoAPesosMexicanos(ValorRecibido);
+        	break;
+        }      
+	}
+}

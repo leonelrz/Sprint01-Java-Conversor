@@ -1,0 +1,48 @@
+package InicioPrincipal;
+
+import javax.swing.*;
+
+import ConversorMonedas.FunctionMonedas;
+
+public class Principal{
+	
+	static FunctionMonedas monedas = new FunctionMonedas();
+	
+	static FunctionTemperatura temperatura = new FunctionTemperatura();
+	
+	public static void main(String[] args) {
+		String opciones = (JOptionPane.showInputDialog(null, "Seleccione una opcion de conversión", "Menu", JOptionPane.QUESTION_MESSAGE, null, new Object[] {"Conversor de Monedas", "Conversor de Temperatura"}, "Seleccion"  )).toString();
+		switch (opciones) {
+		case "Conversor de Monedas": {
+			String input = JOptionPane.showInputDialog("Ingrese un valor para convertir");
+			double valorRecibido = Double.parseDouble(input);
+			monedas.ConvertirMonedas(valorRecibido);
+			
+			int respuesta=JOptionPane.showConfirmDialog(null,"¿Deseas realizar otra conversión?");
+            if (JOptionPane.OK_OPTION == respuesta){
+            	Principal.main(args);
+            	//System.out.println("Selecciona opción Afirmativa");
+            }else{
+               	JOptionPane.showMessageDialog(null, "Programa terminado");                         
+            }
+		}
+		
+		case "Conversor de Temperatura": {
+			String input = JOptionPane.showInputDialog("Ingrese un valor de temperatura para convertir");
+			double valorRecibido = Double.parseDouble(input);
+			temperatura.ConvertirTemperatura(valorRecibido);
+			
+			int respuesta=JOptionPane.showConfirmDialog(null,"¿Deseas realizar otra conversión?");
+            if (JOptionPane.OK_OPTION == respuesta){
+            	Principal.main(args);
+            	//System.out.println("Selecciona opción Afirmativa");
+            }else{
+               	JOptionPane.showMessageDialog(null, "Programa terminado");                         
+            }
+		}
+		
+		
+		}
+	}
+
+}
