@@ -1,4 +1,4 @@
-# Sprint 01 Java - Conversor
+<h1 align="center"> Challenge 05 Java - Conversor de Unidades</h1>
 
 Este proyecto forma parte del programa de formación ONE (Oracle Next Education), el cual consiste en la creación de un conversor de divisas haciendo uso del lenguaje Java
 
@@ -15,7 +15,7 @@ Este proyecto forma parte del programa de formación ONE (Oracle Next Education)
 En este caso las conversiones se hicieron usando valores fijos de las divisas extranjeras, pero posteriormente se podra refactorizar el codigo para implementar una API, en la cual se podra obtener los valores de conversion de forma automatica.
 Por el momento el precio de las divisas es fijo a feha del 26 de enero de 2023.
 
-### Funcinamiento del proyecto
+#### Funcionamiento del protyecto 🛠️
 
 - Seleccionar el tipo de conversor a usar: Una vez ejecutes el programa el usuario podra seleccionar el tipo de conversor a usar.
 
@@ -51,9 +51,24 @@ De no ser asi se desplegara un mensaje de despedida.
 ![image](https://user-images.githubusercontent.com/112590041/214973942-3fcb0649-aedf-425c-b1f0-009fa87f4e18.png)
 
 
+#### Abre y ejecuta el proyecto  📂
 
-### Como ejecutar el proyecto?
+Para ejecutar el proyecto necesitaras:
 
-- Descarga este repositorio para tener una copia de el
-- Procede a abrirlo en tu editor de codigo de preferencia que acepte Java, como Eclipse, Netbeans o VisualStudio
-- Corremos el proyecto como una aplicacion Java
+- Desccargar este repositorio en tu ordenador
+- Una vez descargado lo abriras con el editor de tu preferencia como Eclipse o Netbeans
+- Corremos el proyecto como una aplicacion java
+
+
+
+#### Tecnologias aplicadas 🤖
+
+- Java 11
+- Eclipse IDE
+- Java Swing
+    
+    
+#### Autores 
+  | [<img src="https://avatars.githubusercontent.com/u/112590041?v=4" width=115><br><sub>Leonel Reyes</sub>](https://github.com/leonelrz) |
+  | :---: |
+
